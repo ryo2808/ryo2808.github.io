@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My-Portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header flex">
+    <div class="inner flex is-align-center">
+      <div class="logo">
+        <h1>PORTFOLIO</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#profile">Proflie</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="sp-menu">
+      <span class="material-icons" id="open">
+        menu
+      </span><!--三本線-->
+    </div>
+
+  </header>
+
+  <div class="overlay">
+    <span class="material-icons" id="close">
+      close
+    </span><!--バツ印-->
+    <nav>
+      <ul>
+        <div class="options">
+          <li><a href="#works">Works</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="target"></div>
+
+  <section class="mv">
+    <div class="pic-container">
+      <ul>
+        <li><img src="img/main01.png" alt=""></li>
+        <li><img src="img/main02.jpg" alt=""></li>
+        <li><img src="img/main03.jpg" alt=""></li>
+      </ul>
+
+      <button id="prev">&laquo;</button>
+      <button id="next">&raquo;</button>
+    </div>
+  </section>
+
+
+  <section id="works" class="inner text-align section">
+    <h2 class="section-title">Works</h2>
+
+    <h3 class="works-title">Webdesign</h3>
+
+    <div class="lineup-body flex">
+      <div class="lineup-list animate delay-one">
+        <img src="img/list01.png" alt="ポートフォリオ作品1番目">
+        <h3>準備中</h3>
+        <p>現状、今閲覧頂いておりますこのサイトが私のポートフォリオサイトです。</p>
+
+
+        <a href="#">View</a>
+      </div>
+
+      <div class="lineup-list animate delay-two">
+        <img src="img/list02.png" alt="ポートフォリオ作品2番目">
+        <h3>準備中</h3>
+        <p>現状、今閲覧頂いておりますこのサイトが私のポートフォリオサイトです。</p>
+
+        <a href="#">View</a>
+      </div>
+
+      <div class="lineup-list animate delay-three">
+        <img src="img/list03.png" alt="ポートフォリオ作品3番目">
+        <h3>準備中</h3>
+        <p>現状、今閲覧頂いておりますこのサイトが私のポートフォリオサイトです。</p>
+
+        <a href="#">View</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="profile" class="section inner">
+    <div class="text-align">
+      <h2 class="section-title">Profile</h2>
+    </div>
+
+    <div class="profile-body flex">
+      <div class="profile-image animate">
+        <img src="img/usagi.jpg" alt="うさぎの画像">
+      </div>
+
+      <div class="profile-content animate">
+        <p class="my-name">南崎 椋</p>
+        <dl>
+          <dt>学歴</dt>
+          <dd>2019/3 桃山学院大学 国際教養学部 英語・国際文化学科卒業</dd>
+          <dt>職歴</dt>
+          <dd>在籍期間 2022/4/13～2022/10/31<br>トランスコスモス株式会社</dd>
+          <dt>使える言語</dt>
+          <dd>HTML/CSS/Javascript</dd>
+          <dt>自己紹介</dt>
+          <dd>
+            大学では、主に英語を学んでおりました。<br>大学卒業後、マレーシアに興味を持ちマレーシアの会社に就職しました。<br>コールセンターで培った電話応対のスキルに自信があります。<br>これからは、WEBサイトの管理や作成などの分野に力を入れていきたいと考えています。
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="inner section">
+    <div class="text-align">
+      <h2 class="section-title">Contact</h2>
+    </div>
+
+    <form action="#" method="post">
+
+      <dl>
+        <dt><label for="name">お名前</label></dt>
+        <dd><input type="text" id="name" name="your-name"></dd>
+
+        <dt><label for="e-mail">メールアドレス</label></dt>
+        <dd><input type="email" id="e-mail" name="your-email"></dd>
+
+        <dt><label for="message">お問い合わせ内容</label></dt>
+        <dd><textarea name="message" id="message" name="your-message"></textarea></dd>
+      </dl>
+
+      <div class="button">
+        <input type="submit" value="送信">
+      </div>
+    </form>
+  </section>
+
+
+
+
+  <footer id="footer">
+    <p>&copy;2023My-Portfolio</p>
+  </footer>
+
+  <a href="#" id="to-top">
+    <i class="bi bi-arrow-up-square-fill"></i>
+  </a>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
